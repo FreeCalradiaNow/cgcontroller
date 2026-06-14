@@ -1,0 +1,8 @@
+# Web API & REST framework
+fastapi>=0.110.0
+uvicorn>=0.28.0
+pydantic>=2.6.0
+
+# Hardware driver for Raspberry Pi 4 (for local simulation/stubs) (the real I2C-driver will be installed on the actual Pi later
+adafruit-circuitpython-sht4x
+adafruit-circuitpython-pca9685
