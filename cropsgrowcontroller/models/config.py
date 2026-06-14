@@ -74,8 +74,8 @@ class SystemConfig(BaseModel):
     )
 
     # --- Photoperiod (local wall-clock, HH:MM 24 h) ---
-    light_on_time: str = Field(default="06:00", examples=["06:00"])
-    light_off_time: str = Field(default="18:00", examples=["18:00"])
+    light_on_time: str = Field(default="07:00", examples=["07:00"])
+    light_off_time: str = Field(default="19:00", examples=["19:00"])
     sunrise_sunset_minutes: int = Field(
         default=30,
         ge=0,
