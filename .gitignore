@@ -1,0 +1,20 @@
+# === IDE / Editor Specific ===
+.vscode/
+.cursor/
+.history/
+
+# === Python Environment & Caches ===
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# === OS Generated Files ===
+.DS_Store
+Thumbs.db
+
+# === Project Specific Local Copies ===
+*.json
+*.db
