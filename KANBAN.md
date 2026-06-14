@@ -4,7 +4,7 @@
 
 - [ ] **Task 1.1: Headless OS Setup & Memory Optimization**
   *Description:* Flash Raspberry Pi OS Lite (64-bit). Configure Wi-Fi, enable SSH, and set hostname to `cropsgrowcontroller.local` via Pi Imager. Modify `/etc/fstab` to mount a volatile RAM disk (`tmpfs`) at `/tmp/grow_ram/` with a maximum size of 50MB to shield the SD card from live writes.
-- [ ] **Task 1.2: Project Directory & Python VirtualEnv**
+- [x] **Task 1.2: Project Directory & Python VirtualEnv**
   *Description:* Create project root directory `/home/pi/cropsgrowcontroller/`. Initialize a Python 3 virtual environment (`python3 -m venv venv`). Create `requirements.txt` containing: `fastapi`, `uvicorn`, `pydantic`, `adafruit-circuitpython-sht4x`, `adafruit-circuitpython-pca9685`.
 - [x] **Task 1.3: Shared Data Models Definition**
   *Description:* Created `cropsgrowcontroller/models/` package with Pydantic v2 models: `LiveState` (+ nested `SensorTelemetry`, `ActuatorState`, `ControlStatus`) for `live.json`, `SystemConfig` for `config.json`, and `KlimaLogRecord` + `KLIMA_LOG_DDL` for the SQLite `klima_log` table. Path constants live in `cropsgrowcontroller/paths.py`.
@@ -51,3 +51,4 @@
   *Description:* Create `index.html` and `style.css`. Design a modern, mobile-friendly Grid/Flexbox dashboard interface showcasing live gauges (Temp, RH, VPD, Fan %, Light %). Avoid all external CSS frameworks.
 - [ ] **Task 6.2: Vanilla JS Polling Engine & AJAX Controls**
   *Description:* Create `script.js`. Implement an asynchronous `fetch()` loop running every 2000ms against `GET /api/live` to surgically replace element text contents without page flickering. Bind EventListeners to settings input elements (sliders/input fields) to push instantaneous JSON payloads using `POST /api/settings`.
+
